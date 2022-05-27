@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH REGISTER WEB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/sanitize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body name="dentaku">
+    <h1 class="section-headline">CASH REGISTER WEB</h1>
+
+    <section class="section">
+        <ul class="goods-ul"><tr>
+            <form name="dentaku">
+                <table>
+                    <!-- 液晶画面部分 -->
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" class="display" name="display" value="" disabled><p class="pliceAll">円</p>
+                        </td>
+                    </tr>
+                    <input type="button" value="1" onclick="get_calc(this)" class="num1">
+                    <input type="button" value="2" onclick="get_calc(this)" class="num2">
+                    <input type="button" value="3" onclick="get_calc(this)" class="num3">
+                    <input type="button" value="4" onclick="get_calc(this)" class="num4">
+                    <input type="button" value="5" onclick="get_calc(this)" class="num5">
+                    <input type="button" value="6" onclick="get_calc(this)" class="num6">
+                    <input type="button" value="7" onclick="get_calc(this)" class="num7">
+                    <input type="button" value="8" onclick="get_calc(this)" class="num8">
+                    <input type="button" value="9" onclick="get_calc(this)" class="num9">
+
+                    <tr class="menu">
+                        <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
+                        <!--<td><input type="button" value="×" class="operator" name="add_btn" onclick="get_calc(this)"></td>-->
+                        <td><input type="button" value="C" onclick="get_calc(this)"></td>
+                        <td><input type="button" value="=" class="equal" onclick="get_calc(this)"></td>
+                    </tr>
+
+                </table>
+            </form>
+            <li class="goods-li">
+                <figure class="goods">
+                    <img class="goods-image" src="assets/images/food_hamburger.png" alt="food_hamburger" width="200px" height="180px">
+                        <figcaption class="goods-figcaption">
+                            <h2 class="goods-headline">ハンバーガー</h2>
+                                <input type="button" value="140*" onclick="get_calc(this)" class="goods-description"><p class="plice">円</p>
+                        </figcaption>
+                </figure>
+            </li>
+            <li class="goods-li">
+                <figure class="goods">
+                    <img value="100" class="goods-image" src="assets/images/food_frenchfry.png" alt="food_frenchfry" width="200px" height="180px">
+                        <figcaption class="goods-figcaption">
+                            <h2 class="goods-headline">ポテト</h2>
+                            <input type="button" value="100*" onclick="get_calc(this)" class="goods-description"><p class="plice">円</p>
+                        </figcaption>
+                </figure>
+            </li>
+            <li class="goods-li">
+                <figure class="goods">
+                    <img value="500" class="goods-image" src="assets/images/food_chicken_nugget.png" alt="food_chicken_nugget" width="200px" height="180px">
+                        <figcaption class="goods-figcaption">
+                            <h2 class="goods-headline">ナゲット</h2>
+                            <input type="button" value="500*" onclick="get_calc(this)" class="goods-description"><p class="plice">円</p>
+                        </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
